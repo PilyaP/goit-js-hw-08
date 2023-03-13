@@ -5,15 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 8</title>
-    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      body {
+        background-image: linear-gradient(to bottom, #00bb22, #941c1c);
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 48px;
+        color: #f7d117;
+        text-shadow: 2px 2px #005bbb;
+        margin-bottom: 50px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      li {
+        margin: 20px 0;
+      }
+
+      a {
+        display: inline-block;
+        color: #f7d117;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        text-transform: uppercase;
+        padding: 20px 40px;
+        border: 2px solid #f7d117;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      a:hover {
+        background-color: #f7d117;
+        color: #005bbb;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      a::before,
+      a::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #005bbb;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+      }
+
+      a::before {
+        left: -20px;
+      }
+
+      a::after {
+        right: -20px;
+      }
+
+      a:hover::before {
+        transform: translate(-20px, -50%);
+        background-color: #f7d117;
+      }
+
+      a:hover::after {
+        transform: translate(20px, -50%);
+        background-color: #f7d117;
+      }
+
+      .ukraine-flag {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 150px;
+        height: 100px;
+      }
+
+      .ukraine-flag .blue {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #005bbb;
+      }
+
+      .ukraine-flag .yellow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #f7d117;
+      }
+    </style>
   </head>
   <body>
-    <ul>
-
-      
-      <li><a href="01-gallery.html">Image gallery</a></li>
-      <li><a href="02-video.html">Video playback</a></li>
-      <li><a href="03-feedback.html">Feedback form</a></li>
-    </ul>
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1024px-Flag_of_Ukraine.svg.png"
+        alt="Ukraine flag"
+        class="ukraine-flag"
+      />
+      <h1>Homework 8</h1>
+      <ul>
+        <li><a href="01-gallery.html">Image gallery</a></li>
+        <li><a href="02-video.html">Video playback</a></li>
+        <li><a href="03-feedback.html">Feedback form</a></li>
+      </ul>
+    </div>
   </body>
 </html>
