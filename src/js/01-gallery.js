@@ -3,6 +3,7 @@ import { galleryItems } from './gallery-items.js';
 // Описаний в документації
 import SimpleLightbox from "simplelightbox";
 // Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 const paletteContainer = document.querySelector('.gallery');
 const imageMarkup = createGalleryMarkup(galleryItems); 
